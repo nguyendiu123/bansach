@@ -347,8 +347,6 @@
                                             alt="">
                                         <div class="card-body noidungsp mt-3">
                                             <h6 class="card-title ten"><?php echo $row['ten_san_pham'];?></h6>
-                                            <div class="tacgia", style="color: #0066CC">Tác giả: <?php echo $row['tac_gia'];?></div>
-                                            <div class="nxb", style="color: #0066CC" >NXB: <?php echo $row['nha_xuat_ban'];?></div>
                                             <div class="gia d-flex align-items-baseline">
                                                 <div class="gia", style="color: red">Giá: <?php echo $row['gia'];?>đ</div>
                                             </div>
