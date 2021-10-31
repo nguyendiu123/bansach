@@ -79,7 +79,16 @@
                                 Quản trị đơn hàng
                                 
                             </a>
-                           
+                           <a class="nav-link collapsed" href="quan_tri_khach_hang.php" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Quản trị khách hàng
+                                
+                            </a>
+                             <a class="nav-link collapsed" href="quan_tri_khoa.php" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Quản trị Khoa
+                                
+                            </a>
                     </div>
                 </nav>
             </div>
@@ -104,6 +113,7 @@
                                             <th style="text-align: center">STT</th>
                                             <th style="text-align: center">Tên sách</th>
                                             <th style="text-align: center">Khoa</th>
+                                            <th style="text-align: center">Số lượng</th>
                                             <th style="text-align: center">Gía</th>
                                             <th style="text-align: center">Sửa</th>
                                             <th style="text-align: center">Xóa</th>
@@ -114,7 +124,8 @@
                                             <th style="text-align: center">STT</th>
                                             <th style="text-align: center">Tên sách</th>
                                             <th style="text-align: center">Khoa</th>
-                                            <th style="text-align: center">Gía</th>
+                                            <th style="text-align: center">Số lượng</th>
+                                            <th style="text-align: center">Giá</th>
                                             <th style="text-align: center">Sửa</th>
                                             <th style="text-align: center">Xóa</th>
                                         </tr>
@@ -139,6 +150,7 @@
                                             <td style="text-align: center"><?php echo $i;?></td>
                                             <td style="text-align: center"><?php echo $row["ten_san_pham"];?></td>
                                             <td style="text-align: center"><?php echo $row["khoa_id"];?></td>
+                                            <td style="text-align: center"><?php echo $row["so_luong"];?></td>
                                             <td style="text-align: center"><?php echo $row["gia"];?></td>
                                             <td style="text-align: center"><a href="san_pham_sua.php?id=<?php echo $row['san_pham_id'];?>"> Sửa </a></td>
                                             <td style="text-align: center"><a href="san_pham_xoa.php?id=<?php echo $row['san_pham_id'];?>"> Xóa </a></td>
